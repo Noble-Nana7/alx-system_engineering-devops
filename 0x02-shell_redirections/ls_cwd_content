@@ -1,0 +1,17 @@
+total 52
+drwxr-xr-x 2 root root 272 Jun 20 23:10 .
+drwxr-xr-x 6 root root 121 Jun 19 17:47 ..
+-rwxr-xr-x 1 root root  33 Jun 19 17:59 0-hello_world
+-rwxr-xr-x 1 root root  28 Jun 19 18:03 1-confused_smiley
+-rwxr-xr-x 1 root root  28 Jun 19 18:04 2-hellofile
+-rwxr-xr-x 1 root root  44 Jun 19 18:28 3-third_line
+-rwxr-xr-x 1 root root  39 Jun 19 18:08 3-twofiles
+-rwxr-xr-x 1 root root  41 Jun 19 18:10 4-lastlines
+-rwxr-xr-x 1 root root  41 Jun 19 18:13 5-firstlines
+-rwxr-xr-x 1 root root  40 Jun 20 22:43 6-third_line
+-rwxr-xr-x 1 root root  86 Jun 20 23:03 7-file
+-rwxr-xr-x 1 root root  36 Jun 20 23:10 8-cwd_state
+-rwxr-xr-x 1 root root 119 Jun 19 17:54 autogit
+-rw-r--r-- 1 root root 745 Jun 19 18:17 lacta.txt
+-rw-r--r-- 1 root root   0 Jun 20 23:11 ls_cwd_content
+-rw-r--r-- 1 root root  34 Jun 19 17:51 README.md
