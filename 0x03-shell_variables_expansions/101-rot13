@@ -1,2 +1,3 @@
 #!/bin/bash
-printf '%x\n' $DECIMAL
+echo "${1:-"Usage: $0 <text>"}" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
