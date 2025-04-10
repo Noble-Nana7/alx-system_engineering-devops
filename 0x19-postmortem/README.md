@@ -4,13 +4,11 @@ README.md
 
 ## Issue Summary
 - **Duration**: March 15, 2025 14:00 UTC to March 15, 2025 16:00 UTC
-
 - **Impact**: The database went down, affecting 95% of users who attempted to 
   access product details on the website. Users experienced errors such as 
   "Service Unavailable" when trying to view product information. This caused 
   significant disruption in the shopping experience for our customers. We 
-  could almost hear them crying "WHY, INTERNET, WHY?"
-
+  could almost hear them crying "WHY, INTERNET, WHY?" 😭
 - **Root Cause**: The outage was caused by a misconfiguration during a routine 
   database update, which led to a failure in connecting the application to 
   the database server. The issue was a result of an incorrect setting in the 
@@ -19,36 +17,29 @@ README.md
 ## Timeline
 - **14:00 UTC**: Monitoring system alerted due to high response times observed 
   on the database server. The system sent an automatic incident notification 
-  to the engineering team via PagerDuty. Cue panic mode.
-
+  to the engineering team via PagerDuty. Cue panic mode. 🔔
 - **14:05 UTC**: The on-call engineer acknowledged the alert and started to 
   investigate the issue. Initial checks pointed to high CPU usage on the 
   database server, which was suspected to be the root cause.
-
 - **14:10 UTC**: A deeper investigation revealed that the issue was not related 
   to CPU usage but instead to the database connection issues, as several 
-  services failed to connect to the database. Debugging: Engaged.
-
+  services failed to connect to the database. Debugging: Engaged. 🍿
 - **14:15 UTC**: Logs from the database server were reviewed, and it was 
   discovered that the connection pool was exhausted due to an incorrect 
   configuration in the database settings. The update script had 
-  unintentionally overwritten a critical configuration file. Oops.
-
+  unintentionally overwritten a critical configuration file. Oops. 🙈
 - **14:30 UTC**: At this point, the on-call engineer escalated the issue to the 
   senior database engineer for a second opinion. The senior engineer confirmed 
   the misconfiguration and began working on restoring the correct configuration.
-
 - **14:45 UTC**: The database configuration file was rolled back to its previous 
   version, and a restart of the database service was initiated. The database 
-  started to stabilize, and services began to recover.
-
+  started to stabilize, and services began to recover. 🎉
 - **15:00 UTC**: The database service was fully restored, and initial tests 
   showed that connections were successful. Users could access product info 
-  again (cue customer happiness).
-
+  again (cue customer happiness). 🙌
 - **16:00 UTC**: The incident was officially closed after monitoring systems 
   confirmed that the system was stable and user traffic was returning to 
-  normal levels. The engineering team sighed with relief.
+  normal levels. The engineering team sighed with relief. 😅
 
 ## Root Cause and Resolution
 - **Root Cause**: The root cause of the outage was a misconfiguration in the 
@@ -57,8 +48,7 @@ README.md
   automated deployment process, which led to connection failures between the 
   web application and the database. This issue was not caught during the 
   initial testing phase because the test environment did not reflect the 
-  production environment's traffic load and configuration setup.
-
+  production environment’s traffic load and configuration setup.
 - **Resolution**: The issue was resolved by restoring the correct configuration 
   file from the backup and restarting the database service. This allowed the 
   application to reconnect to the database successfully. We also identified 
@@ -97,3 +87,8 @@ README.md
       importance of testing configuration changes thoroughly.
 
 ---
+
+![Incident Diagram](incident_diagram.png)
+
+*Figure 1: A simplified diagram of how the incident was detected and resolved*
+
