@@ -91,4 +91,3 @@ README.md
 ![Incident Diagram](incident_diagram.png)
 
 *Figure 1: A simplified diagram of how the incident was detected and resolved*
-
